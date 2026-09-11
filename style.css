@@ -354,7 +354,7 @@ section { padding: 64px var(--edge); position: relative; }
   padding: 40px var(--edge);
   text-align: left;
 }
-.contact-panel h2 { font-size: 1.7rem; max-width: 20ch; }
+.contact-panel h2 { font-size: 1.5rem; max-width: 40ch; }
 .contact-panel p { color: var(--text-dim); margin-top: 12px; max-width: 56ch; }
 .contact-links { margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap; }
 
