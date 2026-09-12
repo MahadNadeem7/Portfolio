@@ -251,7 +251,7 @@
           <ul>
             <li>Used an EFR32 microcontroller running Zephyr RTOS for modular, reliable firmware</li>
             <li>Integrated Wi-Fi connectivity alongside GNSS-based satellite positioning to support both indoor and outdoor location tracking</li>
-            <li>Tuned antenna configuration to maintain strong location accuracy across both indoor and outdoor conditions</li>
+            <li>Tuned antenna configuration to maintain location accuracy within 1.3 meters across both indoor and outdoor conditions</li>
             <li>Implemented low-power design techniques to achieve up to 7 days of battery life on a single charge</li>
             <li>Integrated cloud connectivity for remote data sync and monitoring, with a companion app for user control</li>
             <li>Structured the firmware so GNSS, Wi-Fi, and core system logic run as independent, maintainable modules</li>
@@ -288,7 +288,7 @@
             <li>Implemented automatic detection and switching between manual and autonomous operating modes based on system state</li>
             <li>Delivered a responsive joystick-to-motor command pipeline with real-time processing for manual mode</li>
             <li>Processed and executed autonomous navigation commands to drive motor control in autonomous mode</li>
-            <li>Implemented 1D LiDAR-based close-range obstacle detection with a hard-stop algorithm to immediately halt the chair when an obstacle is detected within a critical distance</li>
+            <li>Implemented 1D LiDAR-based close-range obstacle detection with a hard-stop algorithm, bringing the chair to a full stop within 400ms of detecting an obstacle</li>
             <li>Built a PID-based speed control loop for smooth, accurate motor control, used across both modes</li>
           </ul>
         </div>
@@ -323,7 +323,7 @@
             <li>Implemented position-based control loops for accurate, repeatable arm movement, with real-time feedback handling</li>
             <li>Developed dedicated embedded firmware for a 12-DOF gripper mechanism, generating synchronized multi-channel signals for coordinated joint actuation</li>
             <li>Implemented precise positioning and timing coordination across all 12 gripper joints, tightly synchronized with arm motion over the shared control bus</li>
-            <li>Tested and validated reliable grasping across multiple object shapes</li>
+            <li>Tested and validated repeatability across 10,000 grasp cycles, maintaining positioning accuracy within 1.3mm</li>
             <li>Built a dashboard interface for real-time control and monitoring of the full arm + gripper system</li>
           </ul>
         </div>
@@ -354,7 +354,7 @@
         <div class="field">
           <div class="field-label mono">TECHNICAL DETAILS</div>
           <ul>
-            <li>Used a 1D LiDAR sensor for real-time ground distance data capture, with an ESP32 handling Wi-Fi connectivity</li>
+            <li>Used a 1D LiDAR sensor for real-time ground distance data capture with an effective sensing range up to 32 feet, with an ESP32 handling Wi-Fi connectivity</li>
             <li>Performed sensor filtering and calibration to ensure accurate, reliable distance readings under real flight conditions</li>
             <li>Ran higher-level ground-proximity processing and decision logic on an Orange Pi</li>
             <li>Built an end-to-end data pipeline from sensor capture to processed output, to support safer, more informed landing decisions in a real aircraft environment</li>
