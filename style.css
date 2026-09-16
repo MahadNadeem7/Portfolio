@@ -387,4 +387,4 @@ footer {
 }
 .back-to-top.visible { opacity: 1; pointer-events: auto; }
 .back-to-top:hover { border-color: var(--copper); color: var(--copper-bright); }
-.project-top { padding: 22px 28px 4px; }
+.project-top { padding: 22px 28px 20px; }
