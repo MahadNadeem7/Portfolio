@@ -440,3 +440,43 @@ footer {
   .project-body { padding: 22px 20px 26px; }
   .project-media { aspect-ratio: 4 / 3; }
 }
+
+
+/* ---------- Clearer project section labels ---------- */
+.project-body .field-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--teal-bright);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 1.5;
+  margin-bottom: 9px;
+}
+.project-body .field-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-strong), transparent);
+}
+.project-body > .field:not(.technical-details) {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.technical-details > summary {
+  width: 100%;
+  color: var(--copper-bright);
+  font-size: 12px;
+  font-weight: 600;
+}
+.technical-details[open] > summary {
+  margin-bottom: 10px;
+}
+
+.technical-details > summary {
+  display: list-item;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.technical-details > summary::after { display: none; }
