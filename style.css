@@ -480,3 +480,12 @@ footer {
   padding-bottom: 8px;
 }
 .technical-details > summary::after { display: none; }
+
+.technical-details > summary::-webkit-details-marker { display: none; }
+.technical-details > summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 1.2em;
+  color: var(--copper-bright);
+}
+.technical-details[open] > summary::before { content: "▾"; }
